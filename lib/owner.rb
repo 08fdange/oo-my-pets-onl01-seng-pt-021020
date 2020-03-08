@@ -7,8 +7,6 @@ class Owner
     @name = name
     @species = "human"
     save
-    @o_cats = []
-    @o_dogs = []
   end
   
   def save
