@@ -77,9 +77,6 @@ class Owner
       instance.mood = "nervous"
     end
     
-    self.cats = nil 
-    self.dogs = nil
-    
   end
   
 end
