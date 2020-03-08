@@ -76,7 +76,7 @@ class Owner
       instance.mood = "nervous"
       instance.owner = nil 
     end
-    
   end
+  
   
 end
