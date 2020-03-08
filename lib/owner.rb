@@ -80,7 +80,7 @@ class Owner
   
   def list_pets
     @@all.select do |instance|
-      self == instance.owner
+      self.name == instance.name
     end
   end
 end
