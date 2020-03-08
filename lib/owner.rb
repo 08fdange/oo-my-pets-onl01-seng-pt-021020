@@ -44,11 +44,7 @@ class Owner
   end
   
   def buy_cat(cat_name)
-    Cat.all.select do |instance|
-      if cat_name == instance.name
-        instance.owner = self
-      end
-    end
+    new_cat = Cat.new(cat_name, self)
   end
       
       
