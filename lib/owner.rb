@@ -67,14 +67,18 @@ class Owner
     end
   end
   
+  
   def sell_pets
-    @@all.each do |instance|
-      if self.name == instance.name
-        instance.mood = "nervous"
-        instance.owner = nil
-        instance.pop
-      end
+    self.cats.each do |instance|
+      instance.mood = "nervous"
+      instance.owner = nil
     end
+    
+    self.dogs.each do |instance|
+      instance.mood = "nervous"
+      instance.owner = "nil"
+    end
+  
   end
   
 end
