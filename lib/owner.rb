@@ -78,5 +78,9 @@ class Owner
     end
   end
   
-  
+  def list_pets
+    @@all.select do |instance|
+      self == instance.owner
+    end
+  end
 end
