@@ -71,14 +71,15 @@ class Owner
   def sell_pets
     self.cats.each do |instance|
       instance.mood = "nervous"
-      instance.owner = nil
     end
     
     self.dogs.each do |instance|
       instance.mood = "nervous"
-      instance.owner = "nil"
     end
-  
+    
+    self.cats = nil 
+    self.dogs = nil
+    
   end
   
 end
