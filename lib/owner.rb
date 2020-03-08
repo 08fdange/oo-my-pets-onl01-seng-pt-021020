@@ -50,5 +50,13 @@ class Owner
   def buy_dog(dog_name) 
     new_dog = Dog.new(dog_name, self)
   end
-    
+  
+  def walk_dogs
+    Dog.all.select do |instance|
+      if self == instance.owner
+        instance.mood = "happy"
+      end
+    end
+  end
+  
 end
