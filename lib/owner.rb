@@ -79,8 +79,9 @@ class Owner
   end
   
   def list_pets
-    @@all.select do |instance|
-      self.name == instance.name
-    end
+    dog_count = self.dogs.count
+    cat_count = self.cats.count
+    "I have #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
+  
 end
