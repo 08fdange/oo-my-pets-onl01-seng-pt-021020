@@ -15,11 +15,6 @@ class Dog
     @@all << self
   end
   
-  def owner=(name)
-    self.owner = name
-    self.save
-  end
-  
   def self.all
     @@all
   end
