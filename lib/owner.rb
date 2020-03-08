@@ -69,7 +69,7 @@ class Owner
   
   def sell_pets
     @@all.each do |instance|
-      if self == instance.owner
+      if self.name == instance.name
         instance.mood = "nervous"
         instance.owner = nil
         instance.pop
