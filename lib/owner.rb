@@ -60,6 +60,12 @@ class Owner
   end
   
   def feed_cats
+    Cat.all.select do |instance|
+      if self == instance.owner
+        instance.mood = "happy"
+      end
+    end
+  end
     
   
 end
